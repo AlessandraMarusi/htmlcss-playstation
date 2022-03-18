@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Comic Neue', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* || VARIABILI || */
 :root {
-    --buyBtn_color: #CD3D0F
+    --buyBtn_color: #CD3D0F;
+    --infoBtn_color: #2D64E6;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* #region || HEADER ||*/
@@ -38,8 +43,10 @@ header {
 /* #endregion HEADER */
 
 /* #region || MAIN ||*/
+section {
+    padding-bottom: 15%;
+}
 /* #region || JUMBOTRON ||*/
-
 .jumboBg {
     background-image: url("../img/jumbo-bg.png");
     background-repeat: no-repeat;
@@ -81,12 +88,37 @@ header {
     padding-top: 3%;
 }
 /* #endregion JUMBOTRON */
+
+/* #region || CONSOLE SECTION || */
+.consoleContainer {
+    width: 95%;
+    margin: 0 auto;
+}
+.consoleContainer span {
+    color: #0474CE;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.consoleContainer h2 {
+    font-size: 2.5rem;
+}
+.consoleContainer h5 {
+    color: #727272;
+    padding: 3% 0;
+}
+.consoleContainer .cardImg_container {
+    height: 150px;
+    padding-bottom: 10%;
+}
+.consoleContainer .cardImg_container img {
+    height: 100%;
+    object-fit: contain;
+}
+.consoleContainer h6 {
+    display: none;
+}
+/* #endregion CONSOLE SECTION*/
 /* #endregion MAIN */
-
-
-
-
-
 
 /* #region || MEDIA QUERIES ||*/
 /* SMALL */
@@ -107,12 +139,20 @@ header {
 }
 /* MEDIUM */
 @media screen and (min-width: 768px) {
-    
+    .consoleContainer h6 {
+        display: inline-block;
+    }
+    .consoleContainer button {
+        margin-top: 5%;
+    }
 }
 /* LARGE */
 @media screen and (min-width: 992px) {
     .jumboText {
         width: 30%;
+    }
+    .consoleContainer button {
+        margin-top: 2%;
     }
 }
 

@@ -10,15 +10,66 @@
     clear: both;
 }
 /* || VARIABILI || */
+:root {
+    --buyBtn_color: #CD3D0F
+}
 
 /* #region || HEADER ||*/
+header {
+    display: unset
+}
 /* #region || HEADER-TOP ||*/
 .headerTop {
     background-color: black;
     width: 100%;
+    height: 36px;
+    text-align: right;
+}
+.headerTop img {
+    height: 36px;
+    width: 50px;
+    margin-right: 10px;
 }
 /* #endregion HEADER-TOP*/
 
 /* #region || HEADER-BOTTOM ||*/
+.headerBottom {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
 /* #endregion HEADER-BOTTOM */
 /* #endregion HEADER */
+
+/* #region || MAIN ||*/
+/* #region || JUMBOTRON ||*/
+section.jumbotron {
+    background-image: url("../img/jumbo-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 580px;
+    width: 100%;
+    position: relative;
+}
+.jumboContainer {
+    width: 30%;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+}
+.jumboContainer img {
+    width: 60%;
+}
+.jumboContainer h2 {
+    padding: 5% 0;
+}
+.jumboContainer h5 {
+    padding-bottom: 5%;
+}
+.jumboContainer button {
+    background-color: var(--buyBtn_color);
+}
+/* #endregion JUMBOTRON */
+/* #endregion MAIN */

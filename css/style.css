@@ -11,7 +11,6 @@
 }
 a {
     text-decoration: none;
-    color: black;
 }
 
 /* #region || HEADER ||*/
@@ -80,7 +79,7 @@ section {
 .jumboText button {
     background-color: var(--buyBtn_color);
 }
-.row img {
+.jumboContainer .row img {
     width: 100%;
     border-radius: 20px;
 }
@@ -106,6 +105,9 @@ section {
     color: #727272;
     padding: 3% 0;
 }
+.consoleContainer img {
+    width: 100%;
+}
 .consoleContainer .cardImg_container {
     height: 150px;
     padding-bottom: 10%;
@@ -117,23 +119,84 @@ section {
 .consoleContainer h6 {
     display: none;
 }
+.consoleContainer a {
+    color: black;
+}
 /* #endregion CONSOLE SECTION*/
+
+/* #region || GAME SECTION ||*/
+.gameBg {
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 630px;
+    width: 100%;
+    position: relative;
+}
+section.game {
+    background-color: #1F1F1F;;
+}
+.gameContainer {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+.gameText {
+    width: 95%;
+    position: absolute;
+    bottom: 3rem;
+    left: 2.5%;
+}
+.gameText img {
+    width: 60%;
+}
+.gameText h2 {
+    padding: 5% 0;
+    font-size: 2.5rem;
+}
+.gameText h5 {
+    padding-bottom: 5%;
+    font-size: 1rem;
+}
+.gameText button {
+    background-color: var(--buyBtn_color);
+}
+.gameContainer .row img {
+    width: 100%;
+    border-radius: 20px;
+}
+.gameContainer h2 {
+    font-size: 2.3rem;
+}
+.gameContainer h5 {
+    font-size: 1.7rem;
+    padding-bottom: 3%;
+}
+.gameContainer h6 {
+    padding-top: 5%;
+    font-size: 1.1rem;
+}
+.gameContainer a {
+    color: white;
+}
+/* #endregion GAME SECTION */
 /* #endregion MAIN */
 
 /* #region || MEDIA QUERIES ||*/
 /* SMALL */
 @media screen and (min-width: 576px) {
-    .jumboText {
-       left: 5%;
+    .jumboText, .gameText {
+       left: 2.5%;
        width: 90%;
     }
-    .jumboText h2 {
+    .jumboText h2, .gameText h2 {
         font-size: 2.5rem;
     }
-    .jumboText h5 {
+    .jumboText h5, .gameText h5 {
         font-size: 1.1rem;
     }
-    .jumboText button {
+    .jumboText button, .gameText button {
         font-size: 1.2rem;
     }
 }
@@ -145,14 +208,20 @@ section {
     .consoleContainer button {
         margin-top: 5%;
     }
+    .gameText img {
+        width: 50%;
+    }
 }
 /* LARGE */
 @media screen and (min-width: 992px) {
-    .jumboText {
+    .jumboText, .gameText {
         width: 30%;
     }
     .consoleContainer button {
         margin-top: 2%;
+    }
+    section {
+        padding-bottom: 7%;
     }
 }
 

@@ -2,12 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.clearfix:after{
-    content: '';
-    display: table;
-    clear: both;
+    font-family: 'Comic Neue', cursive;
 }
 /* || VARIABILI || */
 :root {
@@ -44,7 +39,8 @@ header {
 
 /* #region || MAIN ||*/
 /* #region || JUMBOTRON ||*/
-section.jumbotron {
+
+.jumboBg {
     background-image: url("../img/jumbo-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,22 +50,71 @@ section.jumbotron {
     position: relative;
 }
 .jumboContainer {
-    width: 30%;
-    position: absolute;
-    bottom: 5%;
-    left: 3%;
+    width: 95%;
+    margin: 0 auto;
 }
-.jumboContainer img {
+.jumboText {
+    width: 95%;
+    position: absolute;
+    bottom: 3rem;
+    left: 2.5%;
+}
+.jumboText img {
     width: 60%;
 }
-.jumboContainer h2 {
+.jumboText h2 {
     padding: 5% 0;
+    font-size: 2.5rem;
 }
-.jumboContainer h5 {
+.jumboText h5 {
     padding-bottom: 5%;
+    font-size: 1rem;
 }
-.jumboContainer button {
+.jumboText button {
     background-color: var(--buyBtn_color);
+}
+.row img {
+    width: 100%;
+    border-radius: 20px;
+}
+.jumboCards {
+    padding-top: 3%;
 }
 /* #endregion JUMBOTRON */
 /* #endregion MAIN */
+
+
+
+
+
+
+/* #region || MEDIA QUERIES ||*/
+/* SMALL */
+@media screen and (min-width: 576px) {
+    .jumboText {
+       left: 5%;
+       width: 90%;
+    }
+    .jumboText h2 {
+        font-size: 2.5rem;
+    }
+    .jumboText h5 {
+        font-size: 1.1rem;
+    }
+    .jumboText button {
+        font-size: 1.2rem;
+    }
+}
+/* MEDIUM */
+@media screen and (min-width: 768px) {
+    
+}
+/* LARGE */
+@media screen and (min-width: 992px) {
+    .jumboText {
+        width: 30%;
+    }
+}
+
+
+/* #endregion MEDIA QUERIES */

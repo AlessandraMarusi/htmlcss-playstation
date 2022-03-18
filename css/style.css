@@ -43,9 +43,12 @@ header {
 
 /* #region || MAIN ||*/
 section {
-    padding-bottom: 15%;
+    padding: 8% 0;
 }
 /* #region || JUMBOTRON ||*/
+section.jumbotron {
+    padding: 0 0 8% 0;
+}
 .jumboBg {
     background-image: url("../img/jumbo-bg.png");
     background-repeat: no-repeat;
@@ -88,10 +91,13 @@ section {
 }
 /* #endregion JUMBOTRON */
 
-/* #region || CONSOLE SECTION || */
+/* #region || OLD+NEW CONSOLE SECTION || */
 .consoleContainer {
     width: 95%;
     margin: 0 auto;
+}
+.consoleTitle {
+    padding-bottom: 4%;
 }
 .consoleContainer span {
     color: #0474CE;
@@ -100,10 +106,14 @@ section {
 }
 .consoleContainer h2 {
     font-size: 2.5rem;
+    padding-bottom: 2%;
 }
 .consoleContainer h5 {
     color: #727272;
-    padding: 3% 0;
+    margin-bottom: 0;
+}
+.consoleContainer button {
+    margin-top: 5%;
 }
 .consoleContainer img {
     width: 100%;
@@ -121,6 +131,11 @@ section {
 }
 .consoleContainer a {
     color: black;
+}
+.consoleTitle .regSymbol {
+    color: black;
+    font-size: 1.2rem;
+    vertical-align: super;
 }
 /* #endregion CONSOLE SECTION*/
 
@@ -221,7 +236,10 @@ section.game {
         margin-top: 2%;
     }
     section {
-        padding-bottom: 7%;
+        padding: 4%;
+    }
+    section.jumbotron {
+        padding: 0 4% 0 0;
     }
 }
 

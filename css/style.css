@@ -53,7 +53,7 @@ header {
 
 /* #region || MAIN ||*/
 section {
-    padding: 8% 0;
+    padding: 18% 0;
 }
 /* #region || JUMBOTRON ||*/
 section.jumbotron {
@@ -87,6 +87,7 @@ section.jumbotron {
 }
 .jumboText button {
     background-color: var(--buyBtn_color);
+    font-size: 1.2rem;
 }
 .jumboContainer .row img {
     width: 100%;
@@ -99,7 +100,7 @@ section.jumbotron {
 
 /* #region || OLD+NEW CONSOLE SECTION || */
 .consoleTitle {
-    padding-bottom: 4%;
+    padding-bottom: 15%;
 }
 .consoleContainer span {
     color: #0474CE;
@@ -184,6 +185,7 @@ section.game {
 }
 .gameContainer h2 {
     font-size: 2.3rem;
+    padding: 3% 0;
 }
 .gameContainer h5 {
     font-size: 1.7rem;
@@ -240,11 +242,46 @@ section.psPlus, section.psNow {
     cursor: pointer;
 }
 .socialContainer h2 {
-    padding-bottom: 5%;
+    padding-bottom: 14%;
     font-size: 2rem;
 }
 /* #endregion SOCIAL SECTION */
 /* #endregion MAIN */
+
+/* #region || FOOTER ||*/
+footer {
+    background-color: var(--footer-bgColor);
+    padding: 15% 0;
+}
+.footerLanguage img{
+    width: 5%;
+    margin-right: 2%;
+}
+.footerLanguage {
+    padding: 8% 0;
+}
+footer ul {
+    list-style: none;
+}
+footer li a {
+    color: white;
+}
+footer .col-12>img {
+    width: 22%;
+}
+.rights {
+    padding-top: 8%;
+}
+.rights img {
+    width: 30%;
+    padding-bottom: 3%;
+}
+.rights a {
+    display: inline-block;
+    color: white;
+    text-decoration: underline;
+}
+/* #endregion FOOTER*/
 
 /* #region || MEDIA QUERIES ||*/
 /* SMALL */
@@ -265,6 +302,9 @@ section.psPlus, section.psNow {
     section.psPlus, section.psNow {
         padding: 8% 0;
     }
+    .scontiContainer h2 {
+        font-size: 2.5rem;
+    }
     [class*=Container]{
         width: 90%;
         margin: 0 auto;
@@ -275,6 +315,9 @@ section.psPlus, section.psNow {
 }
 /* MEDIUM */
 @media screen and (min-width: 768px) {
+    section { 
+        padding: 12% 0;
+    }
     .consoleContainer h6 {
         display: inline-block;
     }
@@ -283,6 +326,9 @@ section.psPlus, section.psNow {
     }
     .gameText img {
         width: 50%;
+    }
+    .consoleContainer button {
+        margin-top: 10%;
     }
     section.psPlus, section.psNow {
         padding: 0;
@@ -299,17 +345,42 @@ section.psPlus, section.psNow {
 }
 /* LARGE */
 @media screen and (min-width: 992px) {
+    section {
+        padding: 6% 0;
+    }
     .jumboText, .gameText {
         width: 30%;
     }
     .consoleContainer button {
-        margin-top: 2%;
+        margin-top: 8%;
+        font-size: 1.2rem;
     }
-    section {
-        padding: 6% 0;
+    .gameText img {
+        width: 70%;
+    }
+    .gameText h2 {
+        padding: 10% 0;
+    }
+    .consoleTitle {
+        padding-bottom: 5%;
     }
     section.game, section.jumbotron {
         padding-top: 0;
+    }
+    .scontiContainer h4 {
+        padding: 3% 0 7% 0;
+    }
+    .socialContainer h2 {
+        padding-bottom: 5%;
+    }
+    footer  {
+        padding-top: 7%;
+    }
+    .footerContainer li {
+        margin-top: 8%;
+    }
+    .rights {
+        width: 50%;
     }
 }
 /* #endregion MEDIA QUERIES */

@@ -8,9 +8,19 @@
 :root {
     --buyBtn_color: #CD3D0F;
     --infoBtn_color: #2D64E6;
+    --psPlus-bgColor: #BEBCBB;
+    --psNow-bgColor: #161C3B;
+    --footer-bgColor: #00439C;
 }
 a {
     text-decoration: none;
+}
+[class*=Container]{
+    width: 95%;
+    margin: 0 auto;
+}
+.hidden {
+    display: none;
 }
 
 /* #region || HEADER ||*/
@@ -58,10 +68,6 @@ section.jumbotron {
     width: 100%;
     position: relative;
 }
-.jumboContainer {
-    width: 95%;
-    margin: 0 auto;
-}
 .jumboText {
     width: 95%;
     position: absolute;
@@ -92,10 +98,6 @@ section.jumbotron {
 /* #endregion JUMBOTRON */
 
 /* #region || OLD+NEW CONSOLE SECTION || */
-.consoleContainer {
-    width: 95%;
-    margin: 0 auto;
-}
 .consoleTitle {
     padding-bottom: 4%;
 }
@@ -150,11 +152,10 @@ section.jumbotron {
     position: relative;
 }
 section.game {
-    background-color: #1F1F1F;;
+    background-color: #1F1F1F;
+    padding-top: 0%;
 }
 .gameContainer {
-    width: 95%;
-    margin: 0 auto;
     padding-top: 3%;
 }
 .gameText {
@@ -196,6 +197,53 @@ section.game {
     color: white;
 }
 /* #endregion GAME SECTION */
+
+/* #region || PSPLUS / PSNOW SECTION ||*/
+section.psPlus {
+    background-color: var(--psPlus-bgColor);
+}
+section.psNow {
+    background-color: var(--psNow-bgColor);
+}
+section.psPlus, section.psNow {
+    padding: 10% 0;
+}
+.plusContainer .row div:first-child img, .nowContainer .row div:first-child img{
+    width: 60%;
+}
+.plusContainer .row div:last-child img, .nowContainer .row div:last-child img{
+    height: 100%;
+    max-width: 100%;
+}
+.plusContainer p, .nowContainer p {
+    padding: 5% 0;
+    margin: 0%;
+}
+/* #endregion PS PLUS / PS NOW */
+
+/* #region || SCONTI SECTION ||*/
+.scontiContainer img {
+    width: 100%;
+}
+.scontiContainer h2 {
+    font-size: 3rem;
+}
+.scontiContainer h4 {
+    color: #727272;
+    padding: 5% 0 8% 0;
+}
+/* #endregion SCONTI SECTION */
+
+/* #region || SOCIAL SECTION ||*/
+.socialContainer img {
+    width: 100%;
+    cursor: pointer;
+}
+.socialContainer h2 {
+    padding-bottom: 5%;
+    font-size: 2rem;
+}
+/* #endregion SOCIAL SECTION */
 /* #endregion MAIN */
 
 /* #region || MEDIA QUERIES ||*/
@@ -214,6 +262,16 @@ section.game {
     .jumboText button, .gameText button {
         font-size: 1.2rem;
     }
+    section.psPlus, section.psNow {
+        padding: 8% 0;
+    }
+    [class*=Container]{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .socialContainer img {
+        width: 130px;
+    }
 }
 /* MEDIUM */
 @media screen and (min-width: 768px) {
@@ -226,6 +284,18 @@ section.game {
     .gameText img {
         width: 50%;
     }
+    section.psPlus, section.psNow {
+        padding: 0;
+    }
+    .plusContainer .hidden, .nowContainer .hidden {
+        display: inline-block;
+    }
+    .plusContainer p, .nowContainer p {
+        padding: 8% 0;
+    }
+    .scontiContainer h2 {
+        font-size: 2.5rem;
+    }
 }
 /* LARGE */
 @media screen and (min-width: 992px) {
@@ -236,12 +306,10 @@ section.game {
         margin-top: 2%;
     }
     section {
-        padding: 4%;
+        padding: 6% 0;
     }
-    section.jumbotron {
-        padding: 0 4% 0 0;
+    section.game, section.jumbotron {
+        padding-top: 0;
     }
 }
-
-
 /* #endregion MEDIA QUERIES */

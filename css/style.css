@@ -158,6 +158,10 @@ section.jumbotron {
 .consoleContainer img {
     width: 100%;
 }
+.consoleCard {
+    filter: opacity(0.6);
+    border-bottom: 2px solid transparent;
+}
 .consoleContainer .cardImg_container {
     height: 150px;
     padding-bottom: 10%;
@@ -180,6 +184,11 @@ section.jumbotron {
 /* EFFECTS */
 .consoleContainer button:hover {
     outline-color: #0d6efd;
+}
+.consoleCard:hover {
+    filter: opacity(1);
+    transition: 0.2s;
+    border-bottom: 2px solid #00439C;
 }
 /* #endregion CONSOLE SECTION*/
 
@@ -281,6 +290,7 @@ section.psPlus, section.psNow {
 /* #region || SCONTI SECTION ||*/
 .scontiContainer img {
     width: 100%;
+    cursor: pointer;
 }
 .scontiContainer h2 {
     font-size: 3rem;
@@ -288,6 +298,11 @@ section.psPlus, section.psNow {
 .scontiContainer h4 {
     color: #727272;
     padding: 5% 0 8% 0;
+}
+/* EFFETTI */
+.scontiContainer img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 /* #endregion SCONTI SECTION */
 
@@ -299,6 +314,11 @@ section.psPlus, section.psNow {
 .socialContainer h2 {
     padding-bottom: 14%;
     font-size: 2rem;
+}
+.socialContainer img:hover {
+    box-shadow: -1px 3px 8px 5px #9b9a9a;
+    transform: scale(1.05);
+    transition: 00.5s;
 }
 /* #endregion SOCIAL SECTION */
 /* #endregion MAIN */

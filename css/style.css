@@ -48,6 +48,13 @@ header {
     top: 0;
     z-index: 99999;
 }
+.headerBottom .nav-item img {
+    width: 13px;
+}
+.headerBottom .nav-link.show img {
+    transform: rotate(0.5turn);
+    transition: 0.5s;
+}
 /* #endregion HEADER-BOTTOM */
 /* #endregion HEADER */
 

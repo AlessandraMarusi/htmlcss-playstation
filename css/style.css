@@ -47,9 +47,13 @@ header {
     position: sticky;
     top: 0;
     z-index: 99999;
+    font-size: 0.8rem;
+}
+.headerBottom .navbar {
+    height: 50px;
 }
 .headerBottom .nav-link img {
-    width: 13px;
+    width: 10px;
 }
 .headerBottom .nav-link.show img {
     transform: rotate(0.5turn);
@@ -61,6 +65,7 @@ header {
 .header-bottom .list-style a{
     color: black;
     text-decoration: none;
+    font-size: 0.8rem;
 }
 .listText {
     display: block;
@@ -71,6 +76,7 @@ header {
 }
 .list-inline-item a{
     color: black;
+    font-size: 0.8rem;
 }
 .list-inline-item a .fa-circle {
     color: #0070D1;
@@ -83,6 +89,7 @@ header {
 }
 .rightNav button {
     margin: 0 15px 0 5px;
+    font-size: 0.8rem;
 }
 /* EFFECTS */
 .dropdownCard:hover{
@@ -105,12 +112,13 @@ section.jumbotron {
     padding: 0 0 8% 0;
 }
 .jumboBg {
-    background-image: url("../img/jumbo-bg.png");
+    /* background-image: url("../img/jumbo-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     height: 580px;
     width: 100%;
+    position: relative; */
     position: relative;
 }
 .jumboText {

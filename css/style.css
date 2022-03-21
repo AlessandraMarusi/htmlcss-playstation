@@ -62,6 +62,9 @@ header {
     color: black;
     text-decoration: none;
 }
+.listText {
+    display: block;
+}
 .list-inline-item a{
     color: black;
 }
@@ -78,8 +81,9 @@ header {
     margin: 0 15px 0 5px;
 }
 /* EFFECTS */
-.header-bottom .list-inline-item img:hover{
-    box-shadow: 1px 0px 1px #adadad;
+.list-inline-item .dropdown-item:hover{
+    box-shadow: 1px 1px 5px #adadad;
+    border-radius: 10px;
 }
 .rightNav button:hover {
     background-color: #504f4f;

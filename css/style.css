@@ -121,6 +121,10 @@ section.jumbotron {
     position: relative; */
     position: relative;
 }
+.carousel-item img {
+    min-height: 450px;
+    object-fit: cover;
+}
 .jumboText {
     width: 95%;
     position: absolute;

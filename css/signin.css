@@ -1,0 +1,95 @@
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    /* background-image: url("../img/wallpaper.jpg");
+    object-fit: cover;
+    object-position: center; */
+}
+.wrapper>img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    min-height: 500px;
+    overflow-y: hidden;
+}
+.signinContainer {
+    width: 260px;
+    height: 370px;
+    background-color: white;
+}
+.header {
+    background-color: #141414;
+    height: 40px;
+    background-image: url("../img/sony_logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+}
+.header button {
+    opacity: 50%;
+}
+button:hover {
+    opacity: 1;
+}
+.main {
+    height: 305px;
+}
+.main .mainLogo {
+    height: 60px;
+    background-image: url("../img/logo_playstation.png");
+    background-size: cover;
+}
+.mainContent {
+    width: 85%;
+    margin: 0 auto;
+}
+.textFormat {
+    font-size: 0.55rem;
+    line-height: 0.5;
+}
+.mainContent a {
+    display: block;
+}
+.formContainer {
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.formContainer input {
+    font-size: 0.6rem;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.formContainer button:first-of-type {
+    background-color: #3151AA;
+}
+.formContainer button:first-of-type:hover {
+    cursor: not-allowed;
+}
+.btn:disabled {
+    pointer-events: all;
+}
+.formContainer button {
+    width: 100%;
+    font-size: 0.5rem;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.formContainer button:last-of-type {
+    margin-top: 20px;
+    border: 1px solid #ced4da;
+}
+.footer a {
+    color: #777a7e;
+    font-size: 0.5rem;
+}
+@media screen and (max-height: 400px) {
+    .signinContainer {
+        position: fixed;
+        top: 20px;
+    }
+}
+

@@ -65,6 +65,9 @@ header {
 .listText {
     display: block;
 }
+.dropdownCard{
+    width: 10%;
+}
 .list-inline-item a{
     color: black;
 }
@@ -81,7 +84,7 @@ header {
     margin: 0 15px 0 5px;
 }
 /* EFFECTS */
-.list-inline-item .dropdown-item:hover{
+.dropdownCard:hover{
     box-shadow: 1px 1px 5px #adadad;
     border-radius: 10px;
 }

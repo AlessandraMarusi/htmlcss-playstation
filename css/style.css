@@ -67,6 +67,7 @@ header {
 }
 .dropdownCard{
     width: 10%;
+    min-width: 80px;
 }
 .list-inline-item a{
     color: black;
@@ -381,6 +382,10 @@ footer .col-12>img {
     display: inline-block;
     color: white;
     text-decoration: underline;
+}
+/* EFFECTS  */
+footer li a:hover {
+    color: white;
 }
 /* #endregion FOOTER*/
 
